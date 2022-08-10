@@ -1,15 +1,15 @@
 let num = +prompt('Введите число');
 console.log(`введенно число ${num}`);
 let i;
-let isFail = true;
+let primeNum = true;
 for(let i = 2; i < num; i++){
     if (num % i === 0){
-        isFail = false;
+        primeNum = false;
         break;
     }
 }
 
-if(isFail){
+if(primeNum){
     alert(`число ${num} прострое`);
     console.log(`число ${num} прострое`);
 }else{
