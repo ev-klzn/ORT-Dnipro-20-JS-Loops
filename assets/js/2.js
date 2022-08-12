@@ -8,6 +8,6 @@ for(let num = 3; num <= 1000; num++){
         }
     }
     if(primeNum){
-        console.log(`число ${num} прострое.`);
+        console.log(`число ${num} прострое`);
     }
 }
