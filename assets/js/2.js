@@ -1,19 +1,13 @@
-let num = 1000;
-for(let i = 3; i < num-1; i++){
-    if (i > 3 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(let num = 3; num <= 1000; num++){
+    let primeNum = true;
+    for(let i = 2; i < num; i++){
+        if(num % i == 0){
+            primeNum = false;
+            break;
+        }
+    }
+    if(primeNum){
+        console.log(`число ${num} прострое.`);
+    }
 }

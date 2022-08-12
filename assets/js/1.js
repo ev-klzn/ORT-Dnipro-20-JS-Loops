@@ -1,6 +1,5 @@
 let num = +prompt('Введите число');
-console.log(`введенно число ${num}`);
-let i;
+console.log(`введенно число ${num}.`);
 let primeNum = true;
 for(let i = 2; i < num; i++){
     if (num % i === 0){
@@ -10,9 +9,10 @@ for(let i = 2; i < num; i++){
 }
 
 if(primeNum){
-    alert(`число ${num} прострое`);
-    console.log(`число ${num} прострое`);
+    console.log(`число ${num} прострое.`);
+    alert(`число ${num} прострое.`);
+
 }else{
-    alert(`число ${num} непрострое`)
-    console.log(`число ${num} непрострое`);
+    console.log(`число ${num} непрострое.`);
+    alert(`число ${num} непрострое.`);
 }
